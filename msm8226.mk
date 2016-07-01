@@ -81,6 +81,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxml2
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.camera.shutter.disable=1 \
+    camera.disable_zsl_mode=1
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
