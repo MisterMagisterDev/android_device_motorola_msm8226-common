@@ -712,6 +712,12 @@ service xtwifi_inet /system/bin/xtwifi-inet-agent
     group inet gps
     disabled
 
+service lipstickhack /usr/bin/droid/lipstick-hack.sh
+    class core
+    user system
+    oneshot
+    group graphics drmrpc
+
 # Charger
 on charger
     # persist.sys.usb.config is defined in default.prop, override it
